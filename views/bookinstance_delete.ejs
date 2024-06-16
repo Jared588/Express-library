@@ -1,0 +1,9 @@
+<h1><%= title %>: <%= bookinstance.id %></h1>
+<p>Do you really want to delete this book instance?</p>
+<form method="POST">
+  <div class="form-group">
+    <input id="bookinstanceid" class="form-control" type="hidden" name="bookinstanceid" value="<%= bookinstance.id %>">
+  </div>
+  <button class="btn btn-primary" type="submit">Delete</button>
+</form>
+
